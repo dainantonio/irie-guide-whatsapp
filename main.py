@@ -303,7 +303,7 @@ def add_to_session(phone: str, role: str, content) -> None:
 # ── Gemini chat with function calling ─────────────────────────────────────────
 def chat_with_gemini(phone: str, user_message: str) -> str:
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash-001",
+        model_name="gemini-2.5-flash",
         system_instruction=SYSTEM_PROMPT,
         tools=TOOLS,
     )
